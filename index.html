@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,20 +17,175 @@
     </div>
 
     <!-- Hero Section -->
+    <section class="hero">
+        <h1>AI Demo Portfolio</h1>
+    </section>
 
     <section>
         <div class="container">
-            <div class="cards-grid">
-                <em class="text-center mb-30">More to Come!</em>
-            </div>
+             <div class="cards-grid">
+               
+
+        <h4 class="text-center">
+            IBM AI Certified | Google AI Prompting Specialist Certified | 
+            Handshake AI Fellow | 17+ Years Design, Tech, UX</h4>
+
+
+                </div>
+                </div>
     </section>
 
+    <!-- Tabs Section -->
+    <section class="tabs-section">
+        <div class="tabs-nav">
+            <button class="tab-button active" onclick="switchTab(0)">Multimodal Prompting</button>
+            <button class="tab-button" onclick="switchTab(1)">Prompt Refinement</button>
+            <button class="tab-button" onclick="switchTab(2)">Text Generation</button>
+            <button class="tab-button" onclick="switchTab(3)">Image Generation</button>
+        </div>
 
+        <!-----------MULTIMODAL TAB START------------->
+        <div class="tab-content active" id="tab-0">
+      
+
+            <div class="cards-grid">
+                <div class="card">
+
+                    <h3 class="mt-20">Prompt</h3>
+      
+               
+                     <p class="text-align">More coming soon</p>
+                       
+                </div>
+                <div class="card">
+                    <h3>Results</h3>
+
+                     <p class="text-align">More coming soon</p>
+
+                    
+                    <a href="#" class="link">Live Demo Link →</a>
+                </div>
+            </div><!--End of Card Grid-->
+
+            
+
+              <div class="cards-grid">
+                <div class="card">
+
+                    <h3 class="mt-20">Prompt</h3>
+      
+                
+
+                   <p class="text-align">More coming soon</p>
+                    <p>Input Type: <strong>Multi-modality</strong></p>
+                       
+                       
+
+                </div>
+                <div class="card">
+                    <h3>Results</h3>
+
+                      <p class="text-align">More coming soon</p>
+
+                    
+                    <a href="#" class="link">Live Demo Link →</a>
+                </div>
+            </div><!--End of Card Grid-->
+
+
+      
+
+            
+
+
+        </div>
+
+        <!-----------PROMPT REFINEMENT TAB START ------------->  
+        <div class="tab-content" id="tab-1">
+            <h2 class="text-center">Prompt Refinement Lab: Prompt Optimization & Iteration</h2>
+
+            <!-- Anchor Navigation Menu -->
+            <nav class="anchor-menu">
+                <a href="#cot-section" class="anchor-link">Chain-of-Thought Approach</a>
+                <a href="#fewshot-section" class="anchor-link">Few-shot Method</a>
+                <a href="#cod-section" class="anchor-link">Chain-of-density</a>
+                <a href="#zeroshot-section" class="anchor-link">Zero-shot Method</a>
+            </nav>
+
+
+            <!--CoT Section-->
+            <h2 id="cot-section">Chain-of-Thought (CoT) Approach Examples</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>CoT Prompt</h3>
+                    <p class="text-align">More coming soon</p>
+                </div>
+                <div class="card">
+                    <h3>Results</h3>
+                   <p class="text-align">More coming soon</p>
+                    <a href="#" class="card-link">Live Demo Link →</a>
+                </div>
+            </div>
+
+            <!--Few-shot Section-->
+            <h2 id="fewshot-section" style="margin-top: 4rem;">Few-shot Method Examples</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Few-shot Prompt</h3>
+                     <p class="text-align">More coming soon</p>
+                </div>
+                <div class="card">
+                    <h3>Results</h3>
+                     <p class="text-align">More coming soon</p>
+                    <a href="#" class="card-link">Live Demo Link →</a>
+                </div>
+            </div>
+
+            <!--Chain-of-density Section-->
+            <h2 id="cod-section" style="margin-top: 4rem;">Chain-of-density Examples</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>CoD Prompt</h3>
+                <p class="text-align">More coming soon</p>
+                </div>
+                <div class="card">
+                    <h3>Results</h3>
+                    <p class="text-align">More coming soon</p>
+                    <a href="#" class="card-link">Live Demo Link →</a>
+                </div>
+            </div>
+
+            <!--Zero-shot Section-->
+            <h2 id="zeroshot-section" style="margin-top: 4rem;">Zero-shot Method Examples</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Zero-shot Prompt</h3>
+                     <p class="text-align">More coming soon</p>
+                </div>
+                <div class="card">
+               <p class="text-align">More coming soon</p>
+                </div>
+            </div>
+        </div>
+        <!----------- END OF PROMPT REFINEMENT TAB ------------->  
+
+        <!-----------TEXT GENERATION TAB------------->  
+        <div class="tab-content" id="tab-2">
+               <p class="text-align">More coming soon</p>
+        </div>
+
+        <!-----------IMAGE GENERATION TAB START ------------->  
+        <div class="tab-content" id="tab-3">
+         <p class="text-align">More coming soon</p>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Alicia's AI Portfolio</p>
     </footer>
-</body>
 
+      <script src="js/tabs.js"></script>
+      <script src="js/anchormenu.js"></script>
+</body>
 </html>
