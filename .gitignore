@@ -1,0 +1,9 @@
+# Create the .gitignore file and add initial content
+@"
+# VS Code settings
+.vscode/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+"@ | Out-File .gitignore -Encoding utf8
