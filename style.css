@@ -39,7 +39,7 @@ body {
 
 .prompt {
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: .97rem;
     line-height: 24px;
 }
 
@@ -61,6 +61,12 @@ body {
     width: 100%;
 }
 
+.prompt-about {
+    font-size: 13px;
+}
+
+
+        
 /* Animated Gradient Background */
 .gradient-bg {
     position: fixed;
@@ -432,7 +438,7 @@ nav {
 
 .card p {
     color: #fff;
-    font-size: 17px;
+    font-size: .97rem;
     line-height: 1.6;
 }
 
