@@ -48,7 +48,18 @@ body {
     text-decoration: solid;
 }
 
+.demo-link {
+    color: #ffffff;
+    text-decoration: solid;
+}
 
+.demo-link:hover {
+    color: aqua;
+}
+
+.img-responsive {
+    width: 100%;
+}
 
 /* Animated Gradient Background */
 .gradient-bg {
@@ -421,7 +432,7 @@ nav {
 
 .card p {
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.6;
 }
 
