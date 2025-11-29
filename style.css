@@ -11,17 +11,23 @@ body {
     overflow-x: hidden;
 }
 
+
 .container {
-    max-width: 90%;
+    width: 100%;
+    max-width: 1400px;
     position: relative;
     margin: 0 auto;
+    padding: 0 2rem;
 }
-
 
 .text-center {
     text-align: center;
 }
 
+
+.mt-10 {
+    margin-top: 10px;
+}
 
 .mt-20 {
     margin-top: 20px;
@@ -33,13 +39,22 @@ body {
 }
 
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+
 .mb-30 {
     margin-bottom: 30px;
 }
 
+hr {
+    opacity: .20;
+}
+
 .prompt {
     font-weight: normal;
-    font-size: .97rem;
+    font-size: .1.1rem;
     line-height: 24px;
 }
 
@@ -49,12 +64,13 @@ body {
 }
 
 .demo-link {
-    color: #ffffff;
+    font-size: 1.5rem !important;
+    color: #ffffff !important;
     text-decoration: solid;
 }
 
 .demo-link:hover {
-    color: aqua;
+    color: aqua !important;
 }
 
 .img-responsive {
@@ -617,27 +633,349 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Responsive */
+
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Responsive Container Breakpoints */
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+        padding: 0 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
+    .container {
+        max-width: 540px;
+        padding: 0 1rem;
     }
+}
 
-    .tabs-nav {
-        flex-direction: column;
-        align-items: stretch;
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
     }
+}
 
+@media (max-width: 375px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+}
+
+/* Large Desktops (1400px and up) */
+@media (min-width: 1400px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    
+    .card {
+        padding: 2.5rem;
+        border-radius: 24px;
+        min-height: 220px;
+    }
+}
+
+/* Standard Desktops (1200px - 1399px) */
+@media (max-width: 1399px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .card {
+        padding: 2rem;
+        border-radius: 20px;
+        min-height: 200px;
+    }
+}
+
+/* Small Desktops & Large Tablets Landscape (992px - 1199px) */
+@media (max-width: 1199px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .card {
+        padding: 1.75rem;
+        border-radius: 18px;
+        min-height: 190px;
+    }
+}
+
+/* Tablets & iPads Portrait (768px - 991px) */
+@media (max-width: 991px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+        border-radius: 16px;
+        min-height: 180px;
+    }
+    
+    /* Less aggressive hover on tablets */
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(139, 92, 246, 0.2);
+    }
+}
+
+/* Small Tablets & Large Phones Landscape (576px - 767px) */
+@media (max-width: 767px) {
     .cards-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
-
-    .anchor-menu {
-        flex-direction: column;
-        align-items: stretch;
+    
+    .card {
+        padding: 1.5rem;
+        border-radius: 16px;
+        min-height: 160px;
     }
+    
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+    }
+}
 
-    .anchor-link {
-        text-align: center;
+/* Mobile Phones Portrait (375px - 575px) */
+@media (max-width: 575px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin-top: 1.5rem;
+    }
+    
+    .card {
+        padding: 1.25rem;
+        border-radius: 14px;
+        min-height: auto;
+    }
+    
+    /* Minimal hover effect for mobile touch screens */
+    .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.15);
+    }
+}
+
+/* Extra Small Mobile (320px - 374px) */
+@media (max-width: 374px) {
+    .cards-grid {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .card {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+    
+    .card:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 15px rgba(139, 92, 246, 0.1);
+    }
+}
+
+/* ============================================
+   CARD CONTENT RESPONSIVE STYLES
+   (Add these if you have card headings, text, icons, etc.)
+   ============================================ */
+
+/* Card Headings */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+@media (max-width: 1199px) {
+    .card h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .card h3 {
+        font-size: 1.35rem;
+        margin-bottom: 0.875rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 374px) {
+    .card h3 {
+        font-size: 1.125rem;
+    }
+}
+
+/* Card Paragraphs */
+.card p {
+    color: #fff;
+    font-size: 0.97rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 991px) {
+    .card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 575px) {
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 374px) {
+    .card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+}
+
+/* Card Links/Buttons */
+.card a,
+.card-link {
+    color: #8b5cf6;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.3s;
+    margin-top: auto;
+    padding-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.card a:hover,
+.card-link:hover {
+    gap: 1rem;
+}
+
+@media (max-width: 991px) {
+    .card a,
+    .card-link {
+        font-size: 0.925rem;
+        padding-top: 0.875rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .card a,
+    .card-link {
+        font-size: 0.9rem;
+        padding-top: 0.75rem;
+    }
+    
+    .card a:hover,
+    .card-link:hover {
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 374px) {
+    .card a,
+    .card-link {
+        font-size: 0.85rem;
+    }
+}
+
+/* Card Icons (if you have them) */
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .card-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 374px) {
+    .card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.35rem;
+        border-radius: 10px;
+    }
+}
+
+/* Card Images */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 575px) {
+    .card img {
+        border-radius: 10px;
+        margin-bottom: 0.75rem;
     }
 }
