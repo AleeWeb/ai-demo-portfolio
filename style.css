@@ -54,24 +54,33 @@ hr {
 
 .prompt {
     font-weight: normal;
-    font-size: .1.1rem;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 26px;
 }
 
-.link {
-    color: #418EF7;
-    text-decoration: solid;
-}
 
 .demo-link {
-    font-size: 1.5rem !important;
     color: #ffffff !important;
+    font-size: 1.5rem !important;
     text-decoration: solid;
+  
 }
 
 .demo-link:hover {
     color: aqua !important;
 }
+
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: solid;
+  
+}
+
+.footer-link:hover {
+    color: aqua !important;
+}
+
 
 .img-responsive {
     width: 100%;
@@ -543,7 +552,7 @@ footer {
     padding: 3rem 2rem;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #a0a0b0;
+    color: #ffffff;
 }
 
 /* Responsive */
