@@ -67,10 +67,26 @@ hr {
     color: #ffffff !important;
     font-size: 1.5rem !important;
     text-decoration: solid;
-  
 }
 
 .demo-link:hover {
+    color: aqua !important;
+}
+
+
+.pr-text {
+    font-size: 1rem;
+}
+
+.pr-link {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    text-decoration: solid;
+}
+
+
+.pr-link:hover {
     color: aqua !important;
 }
 
@@ -79,7 +95,7 @@ hr {
     color: #ffffff !important;
     text-decoration: solid;
     padding-top: 0px !important;
-  
+
 }
 
 .link:hover {
@@ -96,43 +112,49 @@ hr {
 }
 
 
+.bullet-list li {
+    margin-bottom: 20px;
+}
+
 
 /* Responsive Video Code */
 
 .video-container {
-  position: relative;
-  width: 100%;
-  /* Add padding-bottom to maintain aspect ratio, e.g., 16:9 */
-  padding-bottom: 56.25%; /* (9 / 16) * 100% */
-  height: 0;
+    position: relative;
+    width: 100%;
+    /* Add padding-bottom to maintain aspect ratio, e.g., 16:9 */
+    padding-bottom: 56.25%;
+    /* (9 / 16) * 100% */
+    height: 0;
 }
 
 .video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* --- Responsive video in a container --- */
 .video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
 }
 
 .video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
-        
+
 /* Animated Gradient Background */
 .gradient-bg {
     position: fixed;
@@ -191,14 +213,31 @@ hr {
 }
 
 @keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(30px, -30px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
 }
 
 /* Navigation */
@@ -423,8 +462,15 @@ nav {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Cards Grid */
@@ -737,7 +783,7 @@ html {
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
-    
+
     .card {
         padding: 2.5rem;
         border-radius: 24px;
@@ -751,7 +797,7 @@ html {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
-    
+
     .card {
         padding: 2rem;
         border-radius: 20px;
@@ -765,7 +811,7 @@ html {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    
+
     .card {
         padding: 1.75rem;
         border-radius: 18px;
@@ -779,13 +825,13 @@ html {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.75rem;
     }
-    
+
     .card {
         padding: 1.5rem;
         border-radius: 16px;
         min-height: 180px;
     }
-    
+
     /* Less aggressive hover on tablets */
     .card:hover {
         transform: translateY(-5px);
@@ -799,13 +845,13 @@ html {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .card {
         padding: 1.5rem;
         border-radius: 16px;
         min-height: 160px;
     }
-    
+
     .card:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
@@ -819,13 +865,13 @@ html {
         gap: 1.25rem;
         margin-top: 1.5rem;
     }
-    
+
     .card {
         padding: 1.25rem;
         border-radius: 14px;
         min-height: auto;
     }
-    
+
     /* Minimal hover effect for mobile touch screens */
     .card:hover {
         transform: translateY(-2px);
@@ -839,12 +885,12 @@ html {
         gap: 1rem;
         margin-top: 1rem;
     }
-    
+
     .card {
         padding: 1rem;
         border-radius: 12px;
     }
-    
+
     .card:hover {
         transform: translateY(-1px);
         box-shadow: 0 5px 15px rgba(139, 92, 246, 0.1);
@@ -947,6 +993,7 @@ html {
 }
 
 @media (max-width: 991px) {
+
     .card a,
     .card-link {
         font-size: 0.925rem;
@@ -955,12 +1002,13 @@ html {
 }
 
 @media (max-width: 575px) {
+
     .card a,
     .card-link {
         font-size: 0.9rem;
         padding-top: 0.75rem;
     }
-    
+
     .card a:hover,
     .card-link:hover {
         gap: 0.75rem;
@@ -968,6 +1016,7 @@ html {
 }
 
 @media (max-width: 374px) {
+
     .card a,
     .card-link {
         font-size: 0.85rem;
