@@ -30,42 +30,25 @@ Multimodal prompting enables models to perform cross-modal reasoning, transfer i
 together to understand the world, where each modality (visual, auditory, linguistic, contextual) contributes another layer of meaning.
 
 ### **2. Prompt Refinement**
+
+Highlights how structured refinement improves clarity, correctness, utility, and reasoning.
+
 Featured Methods:
 - Few-Shot  
 - Chain-of-Thought  
-- Chain-of-Density  
-- Zero-Shot  
-
-Highlights how structured refinement improves clarity, correctness, utility, and reasoning.
+- More examples to come!
 
 ### **3. Image Generation**
 High-fidelity image prompts tested with:
 - Midjourney  
-- FLUX.1-dev  
-- Stable Diffusion XL (SDXL)  
-- ChatGPT Image Models  
+- FLUX.1-dev (to come soon) 
 
 Evaluated for alignment, detail control, consistency, and prompt-to-output accuracy.
 
 ### **4. Video Generation**
 
 - Midjourney Video
-- Qwen2-VL Hugging Face Space
----
-
-## 🛠️ Tools & Models
-
-- ChatGPT-5.1 Multimodal  
-- Midjourney  
-- FLUX.1-dev  
-- Stable Diffusion XL (SDXL)  
-- Prompt++  
-- FLUX Prompt Generator  
-- Gemini prompt tools  
-
-**Relevant Certifications:**
-- Google Prompting Essentials (4-course specialization)  
-- IBM Generative AI: Prompt Engineering Basics  
+- More to Come Soon!
 
 ---
 
