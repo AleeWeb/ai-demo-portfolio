@@ -117,40 +117,24 @@ hr {
 }
 
 
-/* Responsive Video Code */
-
+/* Responsive Video Aspect Ratio Wrapper */
 .video-container {
     position: relative;
     width: 100%;
-    /* Add padding-bottom to maintain aspect ratio, e.g., 16:9 */
-    padding-bottom: 56.25%;
-    /* (9 / 16) * 100% */
+    padding-bottom: 56.25%; /* 16:9 ratio */
     height: 0;
+    overflow: hidden;
+    background: #000; /* Prevent flashing white while loading */
 }
 
-.video-container video {
+/* Full size responsive video */
+.video-container .video-player {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-
-/* --- Responsive video in a container --- */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    height: 0;
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
 }
 
 
