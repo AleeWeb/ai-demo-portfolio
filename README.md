@@ -1,8 +1,6 @@
 # 🌐 AI Prompt Portfolio
 
-**Google AI Prompting Specialist Certified • IBM AI Certified • Handshake AI Fellow • 17+ Years of UX, Design & Tech**
-
-A concise collection of **AI prompting, refinement, evaluation, and multimodal testing demos**.  
+A concise collection of **AI prompting, refinement, and multimodal prompting demos**.  
 
 ---
 
