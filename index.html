@@ -19,14 +19,18 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>AI Prompt Demo Portfolio</h1>
+        <h1>AI Prompt Portfolio</h1>
     </section>
 
     <section>
         <div class="container">
             <h4 class="text-center">
-                IBM AI Certified | Google AI Prompting Specialist Certified |
-                Handshake AI Fellow | 17 Years of Combined UX, Design, Tech</h4>
+                <a class="link" href="/docs/Google_Prompting_Essentials.pdf" target="_blank">Google AI Prompting
+                    Specialist Certified</a> |
+                <a class="link" href="/docs/IBM_PromptEngineering.pdf" target="_blank">IBM AI Certified</a>
+                |
+                Handshake AI Fellow | 17 Years of Combined UX, Design, Tech
+            </h4>
 
         </div>
     </section>
@@ -36,14 +40,94 @@
         <div class="tabs-nav">
             <button class="tab-button active" onclick="switchTab(0)">Multimodal Prompting</button>
             <button class="tab-button" onclick="switchTab(1)">Prompt Refinement</button>
-            <button class="tab-button" onclick="switchTab(3)">Image Generation</button>
-            <!--Future<button class="tab-button" onclick="switchTab(2)">Video</button>-->
+            <button class="tab-button" onclick="switchTab(2)">Image Generation</button>
+            <button class="tab-button" onclick="switchTab(3)">Video Generation</button>
         </div>
 
         <!-----------MULTIMODAL TAB START------------->
         <div class="tab-content active" id="tab-0">
 
 
+
+                   <!---Wan 2.1 Prompt START -->
+
+            <div class="cards-grid">
+                <div class="card">
+
+                    <h3 class="mt-20">Wan 2.1 Multimodal Prompt</h3>
+
+                    <h4 class="mt-10 mb-20">Input: 📝 Text + 🖼️ Static Photo ➡️
+
+                   Output: 🎬 Video</h4>
+
+                    <hr>
+
+                    <h4 class="mt-20 mb-30 prompt">
+
+                        Use the uploaded image as the visual base. Keep the scene layout, characters, setting, and
+                        camera angle unchanged. Animate the televisions by turning the screen static into continuous
+                        analog flicker with subtle brightness variation. Add a slow sweep of dark pink and teal light
+                        moving left to right across the room, keeping it soft, rhythmic, and loop-friendly. Preserve
+                        realistic lighting, texture, and shadows, and do not add or remove any objects, text, or
+                        characters.
+                    </h4>
+
+                    <img class="img-responsive" src="images/tvs_yaroslav_multimodal.jpg" 
+                    alt="static multiple tv man and woman image" />
+
+                    <p class="mt-10 mb-10"> Source: Pexels - Photo by Yaroslav Shuraev
+                        <a class="link" href="https://www.pexels.com/photo/man-and-woman-sitting-on-the-floor-beside-televisions-7689080/" target="_blank">
+                            Link</a>
+                        </p>
+
+                        <hr>
+
+                                   <h3>Specs</h3>
+
+                    <p>🧠 AI Model: <strong>Wan 2.1</strong></p>
+
+                    <p>🤖 AI Tool Link: <strong><a class="link" href="https://huggingface.co/spaces/Wan-AI/Wan2.1" 
+                        target="_blank">Wan 2.1 🤗 Hugging Face Space</strong></a></p>
+
+                    <p>🏢 Founding Org: <strong>Wan-AI</strong></p>
+
+                </div><!--End of Left Card Prompt Side-->
+
+                <div class="card">
+                    <h3>✨ Video Output Result</h3>
+
+                    
+                    <div class="video-container mb-30">
+                        <video width="100%" height="auto" controls autoplay muted loop playsinline> 
+                            <source src="/video/wan2.1_multimodal_vidresult.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <em>Click on the Fullscreen icon in the right corner 
+                        on the video to enlarge to full screen.</em>
+
+                    <div class="mt-20" style="max-width: 1279px;">
+                        <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 51.6886%;">
+                            <iframe src="https://iframely.net/O8mMVHmm?theme=light"
+                                style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"
+                                allowfullscreen></iframe></div>
+                    </div>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">Model interprets motion direction from a static image, identifies
+                        environmental constraints, and suggests scene continuation logic.</p>
+
+                </div><!--End of Right Card Side-->
+            </div><!--End of Card Grid-->
+
+            <!---End of Wan 2.1 Prompt-->
+
+
+
+<!--START OF CHATGPT PROMPT-->
             <div class="cards-grid">
                 <div class="card">
 
@@ -98,14 +182,14 @@
                     <p class="prompt-about">
                         This demo shows my ability to create reliable prompts for GPT-5.1 that
                         extracts verified information from a complex PDF
-                        and convert it into an accurate, company-branded visual through
+                        and converts it into an accurate, company-branded visual through
                         <strong>advanced multimodal reasoning</strong>.
                     </p>
 
                     <p class="prompt-about mt-10">
-                        By using a real 50-page UX Research report that I completed for a previous role, I
-                        demonstrate practical multimodal reasoning, careful <strong>data handling</strong>,
-                        and output deliverables stakeholders can trust.
+                        This prompt is based on a <strong>real</strong> 50-page UX research report I delivered to a past
+                        client, but the Fact Sheet was created <em>solely</em> for this prompt demo to show how I turn
+                        real findings into stakeholder-ready output deliverable.
                     </p>
 
                 </div>
@@ -135,51 +219,8 @@
             </div><!--End of Card Grid-->
 
 
-<!---Wan 2.1 Prompt START -->
 
-<div class="cards-grid">
-                <div class="card">
-
-                    <h3 class="mt-20">Wan 2.1 Prompt</h3>
-
-                    <h4>Input: 🖼️📝 Text + Image ➡️</h4>
-
-                    <h4 class="mt-10 mb-20">Output: 🎬 Video</h4>
-
-                    <hr>
-
-                    <h4 class="mt-20 mb-30 prompt">
-
-                   Future prompt
-                    </h4>
-
-                    <h3>Specs</h3>
-
-                    <p>🧠 AI Model: <strong>Wan 2.1</strong></p>
-
-                    <p>🤖 AI Tool: <strong>Wan 2.1 🤗 Hugging Face Space</strong></p>
-
-                    <p>🏢 Founding Org: <strong>Wan-AI</strong></p>
-
-
-                    <p class="mt-20 mb-10">
-                        <strong>Why this AI model and tool?</strong>:
-                        Text
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Results</h3>
-
-                    <p class="mb-30">Future result pending</p>
-                </div>
-            </div><!--End of Card Grid-->
-
-
-<!---End of Wan 2.1 Prompt-->
-
-
-<!--- Gemini 3 Prompt START -->
+            <!--- Gemini 3 Prompt START -->
             <div class="cards-grid">
                 <div class="card">
 
@@ -191,19 +232,19 @@
 
                     <hr>
 
-                     <h4 class="mb-20 mt-20 prompt">
-                    
-                    Acting as a Lead UX Architect, execute a deep multimodal analysis of the uploaded 
-                    Figma user flow PDF by first internally tracing the full user journey to 
-                    identify all screen states, decision nodes, and database interactions.
-                    Prioritize the analysis of the visual flow over any inferred context. <br>
+                    <h4 class="mb-20 mt-20 prompt">
 
-                    <br>Output Format: Synthesize these user flow visual elements into a single code 
-                    block containing the complete Jira Ticket text that includes a Summary, a structured 
-                    Description, contrasting Current vs. Proposed flows, and three discrete Acceptance Criteria.<br>
+                        Acting as a Lead UX Architect, execute a deep multimodal analysis of the uploaded
+                        Figma user flow PDF by first internally tracing the full user journey to
+                        identify all screen states, decision nodes, and database interactions.
+                        Prioritize the analysis of the visual flow over any inferred context. <br>
 
-                    <br>Strictly ground all generated text in the visible diagram data to prevent 
-                    hallucinations, utilizing industry-standard UX terminology.
+                        <br>Output Format: Synthesize these user flow visual elements into a single code
+                        block containing the complete Jira Ticket text that includes a Summary, a structured
+                        Description, contrasting Current vs. Proposed flows, and three discrete Acceptance Criteria.<br>
+
+                        <br>Strictly ground all generated text in the visible diagram data to prevent
+                        hallucinations, utilizing industry-standard UX terminology.
                     </h4>
 
                     <h3>Specs</h3>
@@ -217,34 +258,37 @@
 
                 </div>
                 <div class="card">
-                   
-                      <h3>✨ Output Result -
-                        <a class="demo-link" 
-                        href="https://gemini.google.com/share/6dcd179a5434"
-                            target="_blank" class="card-link mb-30">🔗 Live Demo Link</a>
-                              </h3>
 
-                            <div class="mt-20" style="max-width: 1279px;"><div style="left: 0; width: 100%; 
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href="https://gemini.google.com/share/6dcd179a5434" target="_blank"
+                            class="card-link mb-30">🔗 Live Demo Link</a>
+                    </h3>
+
+                    <div class="mt-20" style="max-width: 1279px;">
+                        <div style="left: 0; width: 100%; 
                             height: 0; position: relative; padding-bottom: 54.6904%;">
-                            <iframe src="https://iframely.net/ql9yr4H7?theme=light" 
-                            style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen>
-                        </iframe></div></div>
+                            <iframe src="https://iframely.net/ql9yr4H7?theme=light"
+                                style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
 
-                        <p class="mt-20">
-                            Note: To ensure accessibility and review, the prompt demos, originally 
-                            created in Figma, are provided in the PDF format due to platform 
-                            export constraints, maintaining the original high fidelity.</p>
-                
+                    <p class="mt-20">
+                        Note: These prompt demos were designed in Figma and shared as
+                        PDFs to maintain visual fidelity because the platform wouldn't
+                        accept PNG uploads.</p>
+
                 </div>
             </div><!--End of Card Grid-->
 
 
 
 
-            
+
         </div><!--End of Multimodal Tab-->
 
-        <!-----------PROMPT REFINEMENT TAB START ------------->
+        <!----------- PROMPT REFINEMENT TAB START ------------->
         <div class="tab-content" id="tab-1">
             <h2 class="text-center">Select a Prompt Refinement Method</h2>
 
@@ -257,154 +301,423 @@
             </nav>
 
             <!--CoT Section-->
-            <h2 id="cot-section">Chain-of-Thought (CoT) Approach Examples</h2>
             <div class="cards-grid">
                 <div class="card">
-                    <h3>CoT Prompt</h3>
+                    <h3>Chain-of-Thought (CoT) Approach Prompt</h3>
 
                     <h4 class="mb-30 prompt">
-                        Create something cool.
+
+                        You are a Senior Product Strategist at a B2B SaaS company responsible for a critical Q3 roadmap
+                        decision, with a primary goal of maximizing ARR to reach a $5M December target. The three
+                        competing features are Dark Mode (low impact), PDF Export (high enterprise client demand), and a
+                        Mobile App (high user demand). Before generating the final output, perform a detailed
+                        Chain-of-Thought (CoT) analysis within a <thinking> block. Explicitly define your assumptions
+                            regarding the potential revenue impact, churn risk (retention value), implementation effort
+                            (estimated weeks for engineering), and overall strategic alignment for each feature. Your
+                            analysis must rigorously compare these variables and prioritize the features based on the
+                            highest projected ARR impact relative to effort. Generate your final output as a
+                            comprehensive Markdown artifact, detailing your recommendation and justified prioritization
+                            schedule.
+
                     </h4>
 
                     <h3>Specs</h3>
-
-                    <p>🧠 AI Model: <strong>Name</strong></p>
-
-                    <p>🤖 AI Tool: <strong>Name</strong></p>
-
-                    <p>🏢 Founding Org: <strong>Name</strong></p>
+                    <p>🧠 AI Model: <strong>Claude (Sonnet 4.5)</strong></p>
+                    <p>🤖 AI Tool: <strong>Claude.ai</strong></p>
+                    <p>🏢 Founding Org: <strong>Anthropic</strong></p>
 
 
-                    <p class="mt-20 mb-10">
-                        <strong>Why this AI model and tool?</strong>: Reason.
-                    </p>
 
-                    <p>Input Type: <strong>Type</strong></p>
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
 
-                </div>
+
+                    <p class="prompt-about">Future text</p>
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">Use of CoT with XML Tags:</p>
+
+
+                </div><!--End of left card side with prompt-->
                 <div class="card">
-                    <h3>Results</h3>
-                    <p class="text-align">More coming soon</p>
-                    <a href="#" class="card-link">Live Demo Link →</a>
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href="https://claude.ai/share/c6c3e7e7-eccc-412e-b63d-f79474688d27"
+                            target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
+
+                    <div class="mb-30" style="max-width: 1279px;">
+                        <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 53.0019%;">
+                            <iframe src="https://iframely.net/7xtXiVeL?theme=light"
+                                style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <img class="img-responsive mt-30" src="images/claude_markdownartifact_CoT.png"
+                        alt="Claude CoT Output" />
+
                 </div>
             </div>
 
             <!--Few-shot Section-->
-            <h2 id="fewshot-section" style="margin-top: 4rem;">Few-shot Method Examples</h2>
             <div class="cards-grid">
                 <div class="card">
-                    <h3>Few-shot Prompt</h3>
+                    <h3>Few-shot Method Prompt</h3>
+
                     <h4 class="mb-30 prompt">
-                        Create something cool.
+                        Convert the following blunt user feedback into constructive corporate speak, maintaining the
+                        exact
+                        meaning but changing the tone. Follow the examples below:
+
+                        Input: 'This design is ugly and the colors clash.' Output: 'We might want to explore alternative
+                        aesthetic directions, specifically regarding the color harmony.'
+
+                        Input: 'You missed the deadline again.' Output: 'I noticed we have deviated from the proposed
+                        timeline once more; let's discuss how we can get back on track.'
+
+                        Input: 'Stop emailing me about this.' Output: 'Let's pause the email thread on this topic for
+                        now.'
+
+                        Input: 'This code is messy and breaks everything.' Output: [Generate response here]
+
                     </h4>
 
+
                     <h3>Specs</h3>
+                    <p>🧠 AI Model: <strong>GPT-5.1</strong></p>
 
-                    <p>🧠 AI Model: <strong>Name</strong></p>
+                    <p>🤖 AI Tool: <strong>ChatGPT</strong></p>
 
-                    <p>🤖 AI Tool: <strong>Name</strong></p>
+                    <p>🏢 Founding Org: <strong>OpenAI</strong></p>
 
-                    <p>🏢 Founding Org: <strong>Name</strong></p>
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
 
+                    <p class="prompt-about">Future text</p>
 
-                    <p class="mt-20 mb-10">
-                        <strong>Why this AI model and tool?</strong>: Reason.
-                    </p>
+                    <h3 class="mt-20">About This Prompt</h3>
 
-                    <p>Input Type: <strong>Type</strong></p>
+                    <p class="prompt-about">Future text</p>
 
                 </div>
                 <div class="card">
-                    <h3>Results</h3>
-                    <p class="text-align">More coming soon</p>
-                    <a href="#" class="card-link">Live Demo Link →</a>
+
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
+
                 </div>
             </div>
 
             <!--Chain-of-density Section-->
-            <h2 id="cod-section" style="margin-top: 4rem;">Chain-of-density Examples</h2>
             <div class="cards-grid">
                 <div class="card">
-                    <h3>CoD Prompt</h3>
+                    <h3>Chain-of-density (CoD) Prompt</h3>
+
+
                     <h4 class="mb-30 prompt">
-                        Create something cool.
+                        I have a transcript of a 30-minute user interview. Your task is to generate three separate,
+                        progressively denser summaries based on the provided text.
+
+                        Summary 1 (The Hook): Write a 2-sentence summary that captures the main topic and the most
+                        general sentiment of the interviewee.
+
+                        Summary 2 (The Key Takeaways): Repeat Summary 1, but integrate the interviewee's 3 most
+                        important pain points and 2 specific product features they mentioned. The length must remain
+                        under 4 sentences.
+
+                        Summary 3 (The Actionable Insight): Repeat Summary 2, but replace any generic phrases with the
+                        exact quotes (verbatim) used by the interviewee when discussing their biggest frustration. This
+                        summary must be the final, densest version, not exceeding 70 words.
+
+                        Present the three summaries clearly labeled as 'DRAFT 1', 'DRAFT 2', and 'FINAL DRAFT'.
                     </h4>
 
+
                     <h3>Specs</h3>
-
                     <p>🧠 AI Model: <strong>Name</strong></p>
-
-                    <p>🤖 AI Tool: <strong>Name</strong></p>
-
+                    <p>🤖 AI Tool: <strong>PROMPT++</strong></p>
                     <p>🏢 Founding Org: <strong>Name</strong></p>
-
-
-                    <p class="mt-20 mb-10">
-                        <strong>Why this AI model and tool?</strong>: Reason.
-                    </p>
-
+                    <p class="mt-20 mb-10"><strong>Why this AI model and tool?</strong>: Reason.</p>
                     <p>Input Type: <strong>Type</strong></p>
 
-                </div>
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
+
+
+                    <p class="prompt-about">Future text</p>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">
+                        This prompt demonstrates the iterative refinement capability of a tool like PROMPT++ to distill
+                        information for rapid consumption.
+                    </p>
+
+
+
+                </div><!--End of left card prompt section-->
                 <div class="card">
-                    <h3>Results</h3>
-                    <p class="text-align">More coming soon</p>
-                    <a href="#" class="card-link">Live Demo Link →</a>
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
                 </div>
             </div>
 
             <!--Zero-shot Section-->
-            <h2 id="zeroshot-section" style="margin-top: 4rem;">Zero-shot Method Examples</h2>
             <div class="cards-grid">
                 <div class="card">
-                    <h3>Zero-shot Prompt</h3>
+                    <h3>Zero-shot Method Prompt</h3>
+
+
                     <h4 class="mb-30 prompt">
-                        Create something cool.
+
+                        A user reports: "The app is translating my product descriptions into the wrong language.
+                        I selected French but it's showing German to my customers."
+
+                        Without prior examples, diagnose: (1) the most likely root causes, (2) immediate
+                        workaround for the user, (3) which team should investigate (front-end, back-end,
+                        localization), (4) how to prevent this issue in QA testing.
                     </h4>
 
+
                     <h3>Specs</h3>
+                    <p>🧠 AI Model: <strong>Claude (Sonnet 4.5)</strong></p>
+                    <p>🤖 AI Tool: <strong>Claude.ai</strong></p>
+                    <p>🏢 Founding Org: <strong>Anthropic</strong></p>
 
-                    <p>🧠 AI Model: <strong>Name</strong></p>
-
-                    <p>🤖 AI Tool: <strong>Name</strong></p>
-
-                    <p>🏢 Founding Org: <strong>Name</strong></p>
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
 
 
-                    <p class="mt-20 mb-10">
-                        <strong>Why this AI model and tool?</strong>: Reason.
+                    <p class="prompt-about">Claude AI is great for strictly following complex instructions without
+                        examples.</p>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">
+                        Future Text
                     </p>
+                </div><!--Left Card Prompt-->
 
-                    <p>Input Type: <strong>Type</strong></p>
-
-                </div>
                 <div class="card">
-                    <h3>Results</h3>
-                    <p class="text-align">More coming soon</p>
-                    <a href="#" class="card-link">Live Demo Link →</a>
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
                 </div>
-            </div>
-
+            </div><!--End of Card Grid Set - Left and Right Sides-->
+        </div>
         <!----------- END OF PROMPT REFINEMENT TAB ------------->
 
 
         <!-----------IMAGE GENERATION TAB START ------------->
-        <div class="tab-content" id="tab-3">
-            <p class="text-align">More coming soon</p>
+        <div class="tab-content" id="tab-2">
 
-            <p>FLUX.1-dev</p>
-        </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>FLUX.1-dev Image Prompt</h3>
 
+
+                    <h4 class="mb-30 prompt">
+
+                        Future prompt
+                    </h4>
+
+
+                    <h3>Specs</h3>
+                    <p>🧠 AI Model: <strong>FLUX.1-dev</strong></p>
+                    <p>🤖 AI Tool: <strong>FLUX.1-dev Hugging Face Space</strong></p>
+                    <p>🏢 Founding Org: <strong>Black Forest Labs</strong></p>
+
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
+
+
+                    <p class="prompt-about">
+                        FLUX is one of the most competitive models in the image-generation space.
+                        It produces extremely high-fidelity imagery, has strong reasoning through prompts, and is
+                        near-industry-standard for experimental AI creative R&D.
+                    </p>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">
+                        Future text.
+                    </p>
+                </div><!--Left Card Prompt-->
+
+                <div class="card">
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
                 </div>
+            </div><!--End of Card Grid Set - Left and Right Sides-->
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Midjourney Image Prompt</h3>
+
+
+                    <h4 class="mb-30 prompt">
+
+                        Future prompt
+                    </h4>
+
+
+                    <h3>Specs</h3>
+                    <p>🧠 AI Model: <strong>Midjourney Model Family</strong></p>
+                    <p>🤖 AI Tool: <strong>Midjourney Web Platform</strong></p>
+                    <p>🏢 Founding Org: <strong>Midjourney, Inc.</strong></p>
+
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
+
+
+                    <p class="prompt-about">Future text.</p>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">
+                        Future Text
+                    </p>
+                </div><!--Left Card Prompt-->
+
+                <div class="card">
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
+                </div>
+            </div><!--End of Card Grid Set - Left and Right Sides-->
+
+        </div>
+        <!--END OF IMAGE GEN TAB-->
+
+
+        <!-----------VIDEO GENERATION TAB START ------------->
+        <div class="tab-content" id="tab-3">
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Qwen2-VL Prompt</h3>
+
+
+                    <h4 class="mb-30 prompt">
+
+                        Future prompt
+                    </h4>
+
+
+                    <h3>Specs</h3>
+                    <p>🧠 AI Model: <strong>Qwen2-VL-7B-Instruct</strong></p>
+                    <p>🤖 AI Tool: <strong>Qwen2-VL-7B 🤗 Hugging Face Space</strong></p>
+                    <p>🏢 Founding Org: <strong>Alibaba Group / Alibaba Cloud Intelligence</strong></p>
+
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
+
+
+                    <p class="prompt-about">Future text.</p>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">
+                        Future Text
+                    </p>
+                </div><!--Left Card Prompt-->
+
+                <div class="card">
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
+                </div>
+            </div><!--End of Card Grid Set - Left and Right Sides-->
+
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Wan 2.1 Prompt</h3>
+
+
+                    <h4 class="mb-30 prompt">
+
+                        Future prompt
+                    </h4>
+
+
+                    <h3>Specs</h3>
+                    <p>🧠 AI Model: <strong>Wan 2.1</strong></p>
+
+                    <p>🤖 AI Tool: <strong>Wan 2.1 🤗 Hugging Face Space</strong></p>
+
+                    <p>🏢 Founding Org: <strong>Wan-AI</strong></p>
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
+
+
+                    <p class="prompt-about">Future text.</p>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">
+                        Future Text
+                    </p>
+                </div><!--Left Card Prompt-->
+
+                <div class="card">
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
+                </div>
+            </div><!--End of Card Grid Set - Left and Right Sides-->
+
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Midjourney Video Prompt</h3>
+
+
+                    <h4 class="mb-30 prompt">
+
+                        Future prompt
+                    </h4>
+
+
+                    <h3>Specs</h3>
+                    <p>🧠 AI Model: <strong>Midjourney Model Family</strong></p>
+                    <p>🤖 AI Tool: <strong>Midjourney Web Platform</strong></p>
+                    <p>🏢 Founding Org: <strong>Midjourney, Inc.</strong></p>
+
+
+                    <h3 class="mt-20">Why this AI model and tool?</h3>
+
+
+                    <p class="prompt-about">Future text.</p>
+
+
+                    <h3 class="mt-20">About This Prompt</h3>
+
+                    <p class="prompt-about">
+                        Future Text
+                    </p>
+                </div><!--Left Card Prompt-->
+
+                <div class="card">
+                    <h3>✨ Output Result -
+                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                    </h3>
+                </div>
+            </div><!--End of Card Grid Set - Left and Right Sides-->
+
+        </div>
+        <!--END OF VIDEO GEN TAB-->
     </section><!--End of Tabbed Content-->
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Alicia's AI Portfolio |
 
-            <a class="footer-link" href="https://www.linkedin.com/in/aaux/" target="_blank">LinkedIn</a> |
+            <a class="link" href="https://www.linkedin.com/in/aaux/" target="_blank">LinkedIn</a> |
 
-            <a class="footer-link" href="https://github.com/AleeWeb" target="_blank">GitHub</a>
+            <a class="link" href="https://github.com/AleeWeb" target="_blank">GitHub</a>
         </p>
     </footer>
 

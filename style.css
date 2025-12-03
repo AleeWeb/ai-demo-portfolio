@@ -71,13 +71,13 @@ hr {
 }
 
 
-.footer-link {
-    color: #ffffff;
+.link {
+    color: #ffffff !important;
     text-decoration: solid;
   
 }
 
-.footer-link:hover {
+.link:hover {
     color: aqua !important;
 }
 
@@ -88,6 +88,42 @@ hr {
 
 .prompt-about {
     font-size: 13px;
+}
+
+
+
+/* Responsive Video Code */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  /* Add padding-bottom to maintain aspect ratio, e.g., 16:9 */
+  padding-bottom: 56.25%; /* (9 / 16) * 100% */
+  height: 0;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* --- Responsive video in a container --- */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
