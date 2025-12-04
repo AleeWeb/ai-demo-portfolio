@@ -325,8 +325,8 @@
             <nav class="anchor-menu">
                 <a href="#fewshot-section" class="anchor-link">Few-Shot Method</a>
                 <a href="#cot-section" class="anchor-link">Chain-of-Thought Approach</a>
-                <!-- <a href="#cod-section" class="anchor-link">Chain-of-density</a>
-                <a href="#zeroshot-section" class="anchor-link">Zero-shot Method</a>-->
+                <a href="#cod-section" class="anchor-link">Chain-of-density</a>
+                <a href="#zeroshot-section" class="anchor-link">Zero-shot Method</a>
             </nav>
 
 
@@ -507,7 +507,6 @@
                         <li>Shows refined prompting that produces deeper, structured analysis instead of surface-level
                             output.</li>
 
-
                     </ul>
 
 
@@ -534,105 +533,169 @@
 
 
 
-
-            <!---------TEMPORARILY HIDE
             <section id="cod-section" class="cards-grid">
                 <div class="card">
-                    <h3>Chain-of-density (CoD) Prompt</h3>
+                    <h3>Chain-of-density (CoD) Prompt: <br>
+                        A structured text-summarization prompt</h3>
 
+                    <hr>
 
-                    <h4 class="mb-30 prompt">
-                        I have a transcript of a 30-minute user interview. Your task is to generate three separate,
-                        progressively denser summaries based on the provided text.
+                    <h4 class="mb-30 mt-30 prompt">
+                        Your task is to apply a Chain-of-Density summarization method to the interview transcript below
+                        and produce three progressively denser summaries. <br>
 
-                        Summary 1 (The Hook): Write a 2-sentence summary that captures the main topic and the most
-                        general sentiment of the interviewee.
-
-                        Summary 2 (The Key Takeaways): Repeat Summary 1, but integrate the interviewee's 3 most
-                        important pain points and 2 specific product features they mentioned. The length must remain
-                        under 4 sentences.
-
-                        Summary 3 (The Actionable Insight): Repeat Summary 2, but replace any generic phrases with the
-                        exact quotes (verbatim) used by the interviewee when discussing their biggest frustration. This
-                        summary must be the final, densest version, not exceeding 70 words.
-
-                        Present the three summaries clearly labeled as 'DRAFT 1', 'DRAFT 2', and 'FINAL DRAFT'.
+                        1) DRAFT 1: 2-sentence summary that captures the main topic and the interviewee’s overall
+                        sentiment. 2) DRAFT 2: Start with DRAFT 1 but add exactly: • 3 key pain points the interviewee
+                        expresses • 2 specific product features they mention Keep under 4 sentences total. 3) FINAL
+                        DRAFT: Start with DRAFT 2 but replace any generic phrasing with exact verbatim quotes from the
+                        transcript about their biggest frustration. Must be under 70 words and most information-dense.
+                        Label outputs exactly like this and provide no extra commentary:
                     </h4>
 
 
-                    <h3>Specs</h3>
-                    <p>🧠 AI Model: <strong>Name</strong></p>
-                    <p>🤖 AI Tool: <strong>PROMPT++</strong></p>
-                    <p>🏢 Founding Org: <strong>Name</strong></p>
-                    <p class="mt-20 mb-10"><strong>Why this AI model and tool?</strong>: Reason.</p>
-                    <p>Input Type: <strong>Type</strong></p>
+                    <h4 class="prompt">
+                        <em style="font-weight: bold;">
+                            The full prompt is lengthy.
+                            </em>
 
-                    <h3 class="mt-20">Why this AI model and tool?</h3>
+                            <a class="link mb-30" href="https://chatgpt.com/share/6931dc1c-7104-8008-aaa1-bed48c6619e7"
+                                target="_blank">🔗 View the Full Prompt on ChatGPT 5.1</a>
+                  
+                    </h4>
 
-
-                    <p class="prompt-about">Future text</p>
-
-
-                    <h3 class="mt-20">About This Prompt</h3>
-
-                    <p class="prompt-about">
-                        This prompt demonstrates the iterative refinement capability of a tool like PROMPT++ to distill
-                        information for rapid consumption.
-                    </p>
+                    <hr>
 
 
+                    <h3 class="mt-20">How This Prompt Demonstrates Chain-of-density Method and Refinement</h3>
 
-                </div>End of left card prompt section
+                    <ul class="bullet-list">
+
+                        <li>Shapes model responses through structured refinement criteria, tighter constraints, and
+                            layered summarization steps to reach content-rich result.
+                        </li>
+
+                        <li>Uses a progressive compression method that starts broad and systematically increases
+                            informational density, demonstrating the CoD refinement approach from general summary to
+                            final insight.</li>
+
+                    </ul>
+
+                </div><!--End of left card prompt section-->
                 <div class="card">
+
                     <h3>✨ Output Result -
-                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                        <a class="demo-link" href="https://chatgpt.com/share/6931dc1c-7104-8008-aaa1-bed48c6619e7"
+                            target="_blank" class="card-link">🔗 Live Demo Link</a>
                     </h3>
+
+
+                    <h4 class="mb-30 mt-30 prompt">
+                        DRAFT 1:
+                        The interviewee uses the platform to manage jewelry listings and appreciates features like photo
+                        storage and automatic shipping. Overall, they feel frustrated because key actions are hard to
+                        find and navigation slows them down. <br>
+
+                        <br>
+                        DRAFT 2:
+                        The interviewee uses the platform to manage listings and values centralized photo storage and
+                        automatic shipping. However, they struggle with buried menus, difficulty filtering unread
+                        messages, and scattered analytics. They specifically mention wanting clearer navigation and a
+                        universal search bar. These pain points turn quick edits into long, stressful tasks.
+                        <br>
+
+                        <br>
+                        FINAL DRAFT:
+                        The interviewee uses the platform to manage listings and values photo storage and automatic
+                        shipping, but buried menus, message filtering issues, and scattered analytics make them say, “I
+                        can never find anything when I need it,” and that it feels “too messy to be useful.” They want
+                        clearer navigation and a universal search bar, because current friction makes them think, “Why
+                        is this so complicated?”
+
+                    </h4>
+
+
                 </div>
             </section>
 
-            Zero-shot Section
+            <!---Zero-shot Section--->
             <section id="zeroshot-section" class="cards-grid">
                 <div class="card">
-                    <h3>Zero-shot Method Prompt</h3>
+                    <h3>Zero-Shot Method Prompt</h3>
 
+                    <hr>
 
-                    <h4 class="mb-30 prompt">
+                    <h4 class="mt-20 mb-30 prompt">
 
-                        A user reports: "The app is translating my product descriptions into the wrong language.
-                        I selected French but it's showing German to my customers."
+                        A user reports:
+                        “The app is translating my product descriptions into the wrong language. I selected French but
+                        it's showing German to my customers.”
 
-                        Without prior examples, diagnose: (1) the most likely root causes, (2) immediate
-                        workaround for the user, (3) which team should investigate (front-end, back-end,
-                        localization), (4) how to prevent this issue in QA testing.
+                        Without any prior examples, analyze this issue zero-shot using your own reasoning. If you are
+                        uncertain at any step, briefly state your assumptions.
+
+                        Using only the information above, provide:
+
+                        Root Causes (3-5 bullets) — your most likely explanations, ordered by probability.
+
+                        Immediate Workaround (2-3 bullets) — what the user can do right now to reduce impact.
+
+                        Team Ownership (choose 1: Front-End, Back-End, Localization) — and one sentence on why.
+
+                        Prevention Strategy for QA Testing (3 bullets) — specific test methods or checks to avoid this
+                        in the future.
+
+                        Confidence Level (%) — your estimated confidence in the accuracy of your reasoning.
+
+                        Formatting Requirements:
+
+                        Use markdown
+
+                        Keep the full response under 160 words
+
+                        Avoid repeating the user report text
+
+                        Do not request additional information
                     </h4>
 
+                    <hr>
 
-                    <h3>Specs</h3>
+                    <h3 class="mt-30">Specs</h3>
                     <p>🧠 AI Model: <strong>Claude (Sonnet 4.5)</strong></p>
                     <p>🤖 AI Tool: <strong>Claude.ai</strong></p>
                     <p>🏢 Founding Org: <strong>Anthropic</strong></p>
 
-                    <h3 class="mt-20">Why this AI model and tool?</h3>
-
-
-                    <p class="prompt-about">Claude AI is great for strictly following complex instructions without
-                        examples.</p>
-
-
-                    <h3 class="mt-20">About This Prompt</h3>
-
-                    <p class="prompt-about">
-                        Future Text
-                    </p>
                 </div>
 
                 <div class="card">
                     <h3>✨ Output Result -
-                        <a class="demo-link" href=".." target="_blank" class="card-link">🔗 Live Demo Link</a>
+                        <a class="demo-link" href="https://claude.ai/share/beac8607-6086-4859-9846-33f42dec275e"
+                            target="_blank" class="card-link">
+                            🔗 View on Claude.AI</a>
                     </h3>
+
+                    <hr>
+
+                    <h3 class="mt-20">How This Prompt Demonstrates Zero-Shot Method and Refinement</h3>
+
+                    <ul class="bullet-list">
+
+                        <li>No prior examples are given to the model. It's asked to diagnose and respond entirely from
+                            the prompt context alone.
+                        </li>
+
+                        <li>The instructions directly request structured reasoning (root causes, workaround, ownership,
+                            prevention) without referencing past demonstrations or templates.
+                        </li>
+
+                        <li>The prompt relies on the model's built-in knowledge and linguistic inference rather than
+                            supplying sample answers or patterns to follow.
+                        </li>
+
+                    </ul>
+
                 </div>
             </section>
-            -->
+
 
         </div><!----------- END OF PROMPT REFINEMENT TAB ------------->
 
@@ -645,9 +708,9 @@
             <div class="cards-grid">
                 <div class="card">
 
-                    <h3>Midjourney Text To Image Prompt</h3>
+                    <h3>Midjourney Text To Image Prompt:
 
-                    <h4 class="mt-20 mb-20">Campaign Product Launch Poster</h4>
+                        Campaign Product Launch Poster</h3>
 
                     <hr>
 
@@ -756,10 +819,10 @@
             <!--MID JOURNEY START -->
             <div class="cards-grid">
                 <div class="card">
-                    <h3>Midjourney Text to Video Prompt | <br> 
-                        Custom Video Deliverable</h3>
+                    <h3>Midjourney Text to Video Prompt: <br>
+                        Custom Campaign-Ready Video Asset</h3>
 
-                        <hr>
+                    <hr>
 
                     <h4 class="mt-20 mb-30 prompt" style="font-size: 1.1rem">
                         Professional creative designer at sleek modern urban workspace, dual monitors displaying
@@ -778,7 +841,10 @@
                     <h3 class="mt-20">About This Prompt</h3>
 
                     <p class="prompt-about">
-                        This text-to-video prompt guides Midjourney to produce a modern workspace scene with realistic expressions and a clear brand story, showcasing how I can create custom campaign-ready video assets. It demonstrates my ability to direct AI models with strategic instructions and deliver polished, high-fidelity visuals for branding and client work
+                        This text-to-video prompt guides Midjourney to produce a modern workspace scene with realistic
+                        expressions and a clear brand story, showcasing how I can create custom campaign-ready video
+                        assets. It demonstrates my ability to direct AI models with strategic instructions and deliver
+                        polished, high-fidelity visuals for branding and client work
                     </p>
                 </div><!--Left Card Prompt-->
 

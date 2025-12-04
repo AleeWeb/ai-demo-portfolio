@@ -36,7 +36,8 @@ Highlights how structured refinement improves clarity, correctness, utility, and
 Featured Methods:
 - Few-Shot  
 - Chain-of-Thought  
-- More examples to come!
+- Chain-of-density
+- Zero-shot Method
 
 ### **3. Image Generation**
 High-fidelity image prompts tested with:
