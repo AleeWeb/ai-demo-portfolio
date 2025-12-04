@@ -48,7 +48,7 @@ Evaluated for alignment, detail control, consistency, and prompt-to-output accur
 ### **4. Video Generation**
 
 - Midjourney Video
-- More to Come Soon!
+- Pika 2.5
 
 ---
 
