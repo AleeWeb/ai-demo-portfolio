@@ -1,4 +1,4 @@
-# 🌐 AI Prompt Portfolio
+# 🌐 Generative AI Portfolio
 
 A concise collection of **AI prompting, refinement, and multimodal prompting demos**.  
 
